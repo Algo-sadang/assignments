@@ -1,5 +1,5 @@
 /**
- 부분수열의 합
+ 외계인의 기타 연주
  https://www.acmicpc.net/problem/2841
  */
 
@@ -13,7 +13,7 @@ package week01;
 
 import java.util.*;
 
-public class Q2481_Huipyo_Hong {
+public class Q2841_Huipyo_Hong {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt(), p = scanner.nextInt();
