@@ -12,5 +12,5 @@
 |1|1주차|[2493](https://www.acmicpc.net/problem/2493)|탑|✅|✅|✅|❌|✅|
 |2|1주차|[2841](https://www.acmicpc.net/problem/2841)|외계인의 기타연주|✅|❌|✅|❌|✅|
 |3|2주차|[29813](https://www.acmicpc.net/problem/29813)|최애의 팀원|✅|❌|✅|❌|✅|
-|4|2주차|[5464](https://www.acmicpc.net/problem/5464)|주차장|✅|❌|✅|❌|✅|
+|4|2주차|[5464](https://www.acmicpc.net/problem/5464)|주차장|✅|❌|❌|❌|✅|
 |5|3주차|[3190](https://www.acmicpc.net/problem/3190)|뱀||||||
