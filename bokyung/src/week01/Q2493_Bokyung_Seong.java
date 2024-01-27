@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
-public class Q2481_Bokyung_Seong {
+public class Q2493_Bokyung_Seong {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         //출력용
