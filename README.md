@@ -16,4 +16,5 @@
 |5|3주차|[3190](https://www.acmicpc.net/problem/3190)|뱀|✅|❌|❌|✅|||❌|
 |6|4주차|[1182](https://www.acmicpc.net/problem/1182)|부분수열의 합|✅|✅|❌|✅|✅||❌|
 |7|4주차|[21937](https://www.acmicpc.net/problem/21937)|작업|✅|✅|❌|✅|✅||❌|
-|8|5주차|[2636](https://www.acmicpc.net/problem/2636)|치즈||||||||
+|8|5주차|[14562](https://www.acmicpc.net/problem/14562)|태권왕||||||||
+|9|5주차|[2636](https://www.acmicpc.net/problem/2636)|치즈||||||||
