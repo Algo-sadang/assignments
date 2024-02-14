@@ -2,44 +2,47 @@ package week05;
 /**
  * 태권왕
  * https://www.acmicpc.net/problem/14562
- *  [ 효율성 ]
- *  - 메모리: KB
- *  - 시간 : ms
+ * [ 효율성 ]
+ * - 메모리: 18516KB
+ * - 시간 : 240ms
  */
 
-import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class Q14562_Hyesoo_Kim {
-    static int[] arr;
-    static int s;
-    static int count = 0;
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         int n = scanner.nextInt();
-        s = scanner.nextInt();
+        int[][] arr = new int[n][2];
+        for (int i = 0; i < n; i++) {
+            arr[i] = new int[]{scanner.nextInt(), scanner.nextInt()};
+        }
 
         scanner.nextLine();
 
-        arr = Arrays.stream(scanner.nextLine().split(" "))
-                .mapToInt(Integer::parseInt).toArray();
+        for(int[] e: arr) {
+            Queue<int[]> q = new LinkedList<>();
 
-        dfs(0, 0);
+            q.offer(new int[]{e[0], e[1], 0});
 
-        scanner.close();
+            while (!q.isEmpty()) {
+                int[] cur = q.poll();
 
-        System.out.println(s==0? count-1 : count);
-    }
-
-    public static void dfs(int index, int sum) {
-        if(index == arr.length) {
-            if(sum == s) count++;
-            return;
+                if (cur[0] == cur[1]) {
+                    System.out.println(cur[2]);
+                    break;
+                }
+                else if (cur[0] < cur[1]) {
+                    q.offer(new int[]{cur[0] * 2, cur[1] + 3, cur[2] + 1});
+                    q.offer(new int[]{cur[0] + 1, cur[1], cur[2] + 1});
+                }
+            }
         }
 
-        dfs(index+1, sum + arr[index]);
-        dfs(index+1, sum);
+        scanner.close();
     }
 
 }
