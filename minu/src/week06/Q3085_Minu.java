@@ -4,6 +4,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ *  [ 효율성 ]
+ *  - 메모리: 14360KB
+ *  - 시간 : 188ms
+ */
 public class Q3085_Minu {
 
     private static int N;
@@ -31,14 +36,14 @@ public class Q3085_Minu {
 
     private static int findMaxValueCandies() {
 
-        int maxValue = 0;
+        int result = 0;
 
         // 사탕 상자를 돌면서 사탕을 바꿔가며 최대값 찾기
         // 첫번째 루프문은 가로방향으로 사탕을 바꿔가며 최대값을 찾음
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N - 1; j++) {
                 swap(i, j, i, j + 1);
-                maxValue = Math.max(maxValue, check());
+                result = Math.max(result, check());
                 swap(i, j, i, j + 1);
             }
         }
@@ -47,12 +52,12 @@ public class Q3085_Minu {
         for (int i = 0; i < N - 1; i++) {
             for (int j = 0; j < N; j++) {
                 swap(i, j, i + 1, j);
-                maxValue = Math.max(maxValue, check());
+                result = Math.max(result, check());
                 swap(i, j, i + 1, j);
             }
         }
 
-        return maxValue;
+        return result;
     }
 
     // 두 사탕의 위치를 변경
@@ -64,7 +69,7 @@ public class Q3085_Minu {
 
     // 사탕 상자를 돌면서 가장 긴 연속된 사탕의 개수 찾기
     private static int check() {
-        int maxValue = 1;
+        int checkMax = 1;
 
         // 2번의 루프문으로 스왑 후 현재위치에서 행과 열에 대해 연속된 사탕의 길이를 찾고
         // result 에 사탕의 길이의 최대값만 넣어줌
@@ -73,14 +78,15 @@ public class Q3085_Minu {
         for (int i = 0; i < N; i++) {
             int cnt = 1;
             for (int j = 0; j < N - 1; j++) {
+
                 if (candy[i][j] == candy[i][j + 1]) {
                     cnt++;
                 } else {
-                    maxValue = Math.max(maxValue, cnt);
+                    checkMax = Math.max(checkMax, cnt);
                     cnt = 1;
                 }
             }
-            maxValue = Math.max(maxValue, cnt);
+            checkMax = Math.max(checkMax, cnt);
         }
 
         // 현 위치 세로방향으로 진행
@@ -90,14 +96,14 @@ public class Q3085_Minu {
                 if (candy[j][i] == candy[j + 1][i]) {
                     cnt++;
                 } else {
-                    maxValue = Math.max(maxValue, cnt);
+                    checkMax = Math.max(checkMax, cnt);
                     cnt = 1;
                 }
             }
-            maxValue = Math.max(maxValue, cnt);
+            checkMax = Math.max(checkMax, cnt);
         }
 
-        return maxValue;
+        return checkMax;
     }
 
 }
