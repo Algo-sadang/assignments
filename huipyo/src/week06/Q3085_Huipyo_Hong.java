@@ -3,6 +3,12 @@
  https://www.acmicpc.net/problem/3085
  */
 
+/**
+ *  [ 효율성 ]
+ *  - 메모리: 18212KB
+ *  - 시간 : 524ms
+ */
+
 package week06;
 
 import java.util.*;
@@ -26,23 +32,35 @@ public class Q3085_Huipyo_Hong {
         System.out.println(mAnswer);
     }
 
-    private static int getLongestContinuousCount(String[][] candies, boolean isCheckRow) {
+    // 민우님 check() 메소드 코드 참고
+    private static int getLongestContinuousCount(String[][] candies) {
         int result = 0;
 
-        for (int i = 0; i < candies.length; ++i) {
-            int count = 1;
-
-            for (int j = 0; j < candies[i].length - 1; ++j) {
-                String first = isCheckRow ? candies[i][j] : candies[j][i];
-                String last = isCheckRow ? candies[i][j + 1] : candies[j + 1][i];
-
-                if (!first.equals(last)) {
-                    count = 1;
+        for (String[] candy : candies) {
+            int cnt = 1;
+            
+            for (int j = 0; j < candies.length - 1; j++) {
+                if (candy[j].equals(candy[j + 1])) {
+                    cnt++;
                 } else {
-                    count++;
+                    result = Math.max(result, cnt);
+                    cnt = 1;
                 }
             }
-            result = Math.max(result, count);
+            result = Math.max(result, cnt);
+        }
+        for (int i = 0; i < candies.length; i++) {
+            int cnt = 1;
+            
+            for (int j = 0; j < candies.length - 1; j++) {
+                if (candies[j][i].equals(candies[j + 1][i])) {
+                    cnt++;
+                } else {
+                    result = Math.max(result, cnt);
+                    cnt = 1;
+                }
+            }
+            result = Math.max(result, cnt);
         }
         return result;
     }
