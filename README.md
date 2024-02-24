@@ -18,3 +18,5 @@
 |7|4주차|[21937](https://www.acmicpc.net/problem/21937)|작업|✅|✅|❌|✅|✅||❌|✅|
 |8|5주차|[14562](https://www.acmicpc.net/problem/14562)|태권왕|✅|❌|❌|✅|✅|❌|❌|✅|
 |9|5주차|[2636](https://www.acmicpc.net/problem/2636)|치즈|✅|❌|❌|✅|❌|❌|❌|✅|
+|10|6주차|[3085](https://www.acmicpc.net/problem/3085)|사탕게임|✅|❌|❌|✅|✅|❌|❌|❌|
+|11|7주차|[15486](https://www.acmicpc.net/problem/15486)|퇴사 2|||||||||
