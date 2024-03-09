@@ -20,4 +20,5 @@
 |9|5주차|[2636](https://www.acmicpc.net/problem/2636)|치즈|✅|❌|❌|✅|||❌|❌|❌|✅|
 |10|6주차|[3085](https://www.acmicpc.net/problem/3085)|사탕게임|✅|❌|❌|✅|||✅|❌|❌|❌|
 |11|7주차|[15486](https://www.acmicpc.net/problem/15486)|퇴사 2|❌|❌|✅|✅|||❌|❌|❌|❌|
-|12|8주차|[92344](https://school.programmers.co.kr/learn/courses/30/lessons/92344)|파괴되지 않은 건물|||||||||||
+|12|8주차|[92344](https://school.programmers.co.kr/learn/courses/30/lessons/92344)|파괴되지 않은 건물|✅|✅|✅|✅|✅|✅|❌|❌|❌|❌|
+|13|9주차|[1459](https://www.acmicpc.net/problem/1459)|걷기|||||||||||
