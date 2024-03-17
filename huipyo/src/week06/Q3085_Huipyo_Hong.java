@@ -75,8 +75,8 @@ public class Q3085_Huipyo_Hong {
                         candies[i][j] = candies[i][j + 1];
                         candies[i][j + 1] = temp;
                         //getLong....
-                        int rowResult = getLongestContinuousCount(candies, true);
-                        int colResult = getLongestContinuousCount(candies, false);
+                        int rowResult = getLongestContinuousCount(candies);
+                        int colResult = getLongestContinuousCount(candies);
                         mAnswer = Math.max(mAnswer, Math.max(rowResult, colResult));
                         temp = candies[i][j + 1];
                         candies[i][j + 1] = candies[i][j];
@@ -93,8 +93,8 @@ public class Q3085_Huipyo_Hong {
                         candies[j][i] = candies[j + 1][i];
                         candies[j + 1][i] = temp;
                         //getLong....
-                        int rowResult = getLongestContinuousCount(candies, true);
-                        int colResult = getLongestContinuousCount(candies, false);
+                        int rowResult = getLongestContinuousCount(candies);
+                        int colResult = getLongestContinuousCount(candies);
                         mAnswer = Math.max(mAnswer, Math.max(rowResult, colResult));
                         temp = candies[j + 1][i];
                         candies[j + 1][i] = candies[j][i];
