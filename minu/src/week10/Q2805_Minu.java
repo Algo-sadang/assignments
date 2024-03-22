@@ -50,7 +50,6 @@ public class Q2805_Minu {
 
         // 최종적으로 구해진 높이를 출력
         System.out.println(last);
-
     }
 
     // 특정 높이에서의 나무의 길이 합을 계산하는 메서드
