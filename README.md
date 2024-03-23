@@ -22,4 +22,5 @@
 |11|7주차|[15486](https://www.acmicpc.net/problem/15486)|퇴사 2|❌|❌|✅|✅|||❌|❌|❌|❌|
 |12|8주차|[92344](https://school.programmers.co.kr/learn/courses/30/lessons/92344)|파괴되지 않은 건물|✅|✅|✅|✅|✅|✅|❌|❌|❌|❌|
 |13|9주차|[1459](https://www.acmicpc.net/problem/1459)|걷기|✅|✅|✅|❌|✅|✅|❌|❌|❌|❌|
-|14|10주차|[2805](https://www.acmicpc.net/problem/2805)|나무 자르기|||||||||||
+|14|10주차|[2805](https://www.acmicpc.net/problem/2805)|나무 자르기|✅|✅|✅|✅|✅|✅|❌|❌|❌|❌|
+|15|11주차|[14246](https://www.acmicpc.net/problem/14246)|K보다 큰 구간|||||||||||
