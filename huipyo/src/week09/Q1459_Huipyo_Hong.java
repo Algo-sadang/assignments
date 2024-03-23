@@ -1,6 +1,5 @@
 package week09;
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.*;
 
 public class Q1459_Huipyo_Hong {
